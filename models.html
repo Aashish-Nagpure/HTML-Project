@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps' rel='stylesheet'>
+    <title>
+        MODELS
+    </title>
+<style>
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        
+        nav ul li h3
+        {
+            font-family: 'Oleo Script Swash Caps';
+            font-size: 25px;
+        }
+       
+        .responsive-image 
+        {  
+            width: 100%;  
+            height: 700px;
+        }
+        .logo
+        {
+            width: 70px;
+            height: 70px;
+            float: left;
+            
+            
+        }
+        header
+        {
+           background-color: black;
+            color: white;
+        }
+        header::after
+        {
+            content : ' ';
+            display: table;
+            clear: both;
+        }
+        
+        nav
+        {
+            float: right;
+        }
+        nav ul
+        {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav li
+        {
+            
+            display: inline-block;
+            margin-left: 70px;
+            margin-right: 20px;
+            padding-top: 20px;
+            position: relative;
+            animation: Slide_Up 1.4s ease;
+        }
+        nav a
+        {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        nav a:hover
+        {
+            color: crimson;
+        }
+        nav a:before
+        {
+            content : '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: crimson;
+            
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms; 
+        }
+        
+        nav a:hover::before
+        {
+            width: 100%;    
+        }
+    
+         @keyframes Slide_Up
+        {
+            0%
+            {
+                transform: translateY(250px);
+            }
+            100%
+            {
+                transform: translateY(0);
+            }
+        }
+    
+        table
+    {
+        color: ghostwhite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5rem 10rem;
+        
+    }
+        table,td,th
+    {
+        border: 3px ;
+        border-collapse: collapse;
+        border-color: darkgray;
+        border-style: inset;
+        text-align: center;
+    }
+    th,td
+    {
+        padding: 10px;    
+    }
+    th
+    {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 
+    }
+    section
+    {
+        width: 100%;
+        height: 100vh;
+        color: #fff;
+        background: linear-gradient(-45deg , #1B1A1A , #000000 , #474646, #7C7B7B);
+        background-size: 400% 400%;
+        position: relative;
+        animation: change 10s ease-in-out infinite;
+        
+    }
+    @keyframes change
+    {
+        0%
+        {
+            background-position: 0 50%;
+        }
+        50%
+        {
+            background-position: 100% 50%;
+        }
+        100%
+        {
+            background-position: 0 50%;
+        }
+    }
+    .model
+    {
+        font-family: 'Oleo Script Swash Caps';
+        font-size: 20px;
+    }
+        
+</style>
+
+<body>
+    <header>
+        
+            <div class="container">
+                <img src="lamborghini-logo-1000x1100.png" alt="logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li>
+                        <h3>
+                            Lamborghini
+                        </h3>
+                    </li>
+                </ul>
+                
+                
+                
+            </nav>
+                </div>
+        </header>
+    <section>
+    <table align="center">
+        <tr>
+            <th>Sr No.</th>
+            <th>Model Name </th>
+            <th> City Mileage </th>
+            <th>Max Power </th>
+            <th>Fuel Type</th>
+            <th>Engine displacement (cc)</th>
+            <th>Price </th>
+            
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="model">Aventador</td>
+            <td>3.22 Kmpl</td>
+            <td>770Hp</td>
+            <td>Petrol</td>
+            <td>6498</td>
+            <td>5.01-6.25 crore</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="model">Huracan</td>
+            <td>11.24 Kmpl</td>
+            <td>640Hp</td>
+            <td>Petrol</td>
+            <td>5204</td>
+            <td>2.99-3.97 crore</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="model">Urus</td>
+            <td>8.0 Kmpl</td>
+            <td>641Hp</td>
+            <td>Petrol</td>
+            <td>3996</td>
+            <td>3.1 crore</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="model">Veneno</td>
+            <td>5 Kmpl</td>
+            <td>750Hp</td>
+            <td>Petrol</td>
+            <td>6498</td>
+            <td>45 crore</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="model">Murcielago</td>
+            <td>4.8 Kmpl</td>
+            <td>641Hp</td>
+            <td>Petrol</td>
+            <td>6496</td>
+            <td>3.6 crore</td>
+        </tr>
+    </table>
+        </section>
+    
+</body>
+</html>

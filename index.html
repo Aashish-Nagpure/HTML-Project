@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+    <title>
+        LAMBORGHINI
+    </title>
+<style>
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body
+    {
+        background-color: black;
+        font-family: 'Arbutus Slab';
+    }
+        
+        nav ul li h3
+        {
+            font-family: 'Oleo Script Swash Caps';
+            font-size: 25px;
+        }
+       
+        .responsive-image 
+        {  
+            width: 100%;  
+            height: 700px;
+        }
+        .logo
+        {
+            width: 70px;
+            height: 70px;
+            float: left;
+            
+            
+        }
+        header
+        {
+           background-color: black;
+            color: white;
+        }
+        header::after
+        {
+            content : ' ';
+            display: table;
+            clear: both;
+        }
+        
+        nav
+        {
+            float: right;
+        }
+        nav ul
+        {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav li
+        {
+            
+            display: inline-block;
+            margin-left: 70px;
+            margin-right: 20px;
+            padding-top: 20px;
+            position: relative;
+            animation: Slide_Up 1.4s ease;
+        }
+        nav a
+        {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        nav a:hover
+        {
+            color: crimson;
+        }
+        nav a:before
+        {
+            content : '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: crimson;
+            
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms; 
+        }
+        
+        nav a:hover::before
+        {
+            width: 100%;    
+        }
+        
+        #slider
+        {
+            overflow: hidden;
+        }
+        #slider figure
+        {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+        #slider figure img
+        {
+            float: left;
+            width: 20%;
+        }
+        @keyframes slider
+        {
+            0%
+            {
+                left: 0;
+            }
+            20%
+            {
+                left: 0;
+            }
+            25%
+            {
+                left: -100%;
+            }
+            45%
+            {
+                left: -100%;
+            }
+            50%
+            {
+                left: -200%;
+            }
+            70%
+            {
+                left: -200%;
+            }
+            75%
+            {
+                left: -300%;
+            }
+            95%
+            {
+                left: -300%
+            }
+           
+            
+            
+        }
+     .slideup
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 12em;
+            margin-bottom: 12em;
+        }
+       
+        .inner
+        {
+            text-align: center;
+            color: whitesmoke;
+            overflow: hidden;
+            padding: 0.4em;
+        }
+        .inner > h1
+        {
+            font-size: 3.5em;
+            margin-top: 20px;
+            animation: Slide_Up 1.4s ease;
+            padding: 0.4em;
+        }
+        .inner >h3
+        {
+            font-size: 2em;
+            animation: Slide_Up 2.0s ease;
+        }
+        
+        @keyframes Slide_Up
+        {
+            0%
+            {
+                transform: translateY(250px);
+            }
+            100%
+            {
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+    <body>
+        <header>
+            <div class="container">
+                <img src="lamborghini-logo-1000x1100.png" alt="logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li id="name">
+                        <h3>
+                            Lamborghini
+                        </h3>
+                    </li>
+                </ul>
+                
+                
+                
+            </nav>
+                </div>
+        </header>
+            <div id="slider" class="container">
+                <figure>
+                    <image src="Video_Header_Av_Svj.jpg" alt="Banner" class="responsive-image"></image>
+                    <image src="wp53625.jpg" class="responsive-image"></image>
+                    <image src="01-overview_M.jpg" class="responsive-image"></image>
+                    <image src="5d6e6fe92e22af071d10baca.jpg" class="responsive-image"></image>
+                    <image src="gettyimages-1146751282-2048x2048.jpg" alt="Banner" class="responsive-image"></image>
+                </figure>
+                    
+            </div>
+        
+        <div class="slideup">
+            <div class="inner">
+                <h1 ><i>LAMBORGHINI'S</i></h1>
+                <p>
+                    <h3>
+                        <i>
+                        history is story of a dream come true . The dream of its founder , Ferruccio Lamborghini was to make the perfect car . Today the Lamborghini is the car brand that manufactures the most coveted super sports car in the world
+                        </i>
+                            </h3>
+                
+                
+            </div>
+        </div>
+    </body>
+
+</html>
